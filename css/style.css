@@ -1,0 +1,20 @@
+body {
+    --bg-color: #FFFFFF;
+    --bg-secondary-color:#F6F6F6;
+    --text-color:#070707;
+    --text-secondary-color:#828282;
+    --seporator-color:#828282;
+    --base-font-size:18px;
+    --basw-line-height:22px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: var(--base-font-size);
+    line-height: var(--basw-line-height);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
