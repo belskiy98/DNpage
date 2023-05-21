@@ -129,6 +129,7 @@ html, body {
 .skills__instrument {
     display: flex;
     gap: 92px;
+    align-items: flex-end;
 }
 
 .instrument__item {
