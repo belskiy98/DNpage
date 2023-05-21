@@ -88,4 +88,31 @@ html, body {
 .introduction__img img {
     width: 100%;
     height: auto;
+    padding-bottom: 104px;
+}
+
+.about {
+    background-color: var(--bg-secondary-color);
+}
+
+.about-row {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 107px;
+}
+
+.title {
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
 }
