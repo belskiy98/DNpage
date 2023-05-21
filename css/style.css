@@ -144,3 +144,45 @@ html, body {
 .instrument__star {
     padding-top: 40px;
 }
+
+.portfolio {
+    background-color: var(--bg-secondary-color);
+}
+
+.portfolio-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 47px;
+    padding-top: 90px;
+    padding-bottom: 107px;
+}
+
+.portfolio__body {
+    display: flex;
+    flex-direction: column;
+    gap: 99px;
+}
+
+.portfolio__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.portfolio__img img {
+    width: 100%;
+    height: auto;
+}
+
+.link {
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+.link a {
+    color: var(--text-color);
+}
+
+
