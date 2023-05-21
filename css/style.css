@@ -116,3 +116,31 @@ html, body {
     gap: 20px;
     text-align: center;
 }
+
+.skills-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 107px;
+    gap: 70px;
+}
+
+.skills__instrument {
+    display: flex;
+    gap: 92px;
+}
+
+.instrument__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instrument__text {
+    padding-top: 24px;
+}
+
+.instrument__star {
+    padding-top: 40px;
+}
