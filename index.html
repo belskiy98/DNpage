@@ -8,10 +8,34 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
     <title>DNpage</title>
 </head>
 <body>
     <div class="wrapper">
+        <div class="mobile-menu">
+            <div class="mobile__row">
+                <nav>
+                    <ul class="mobile-nav">
+                        <li><a class="nav__item nav__item_active" href="#">Home</a></li>
+						<li><a class="nav__item" href="#about">About me</a></li>
+						<li><a class="nav__item" href="#skills">Skills</a></li>
+						<li><a class="nav__item" href="#portfolio">Portfolio</a></li>
+						<li><a class="nav__item" href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-controls">
+                    <button class="icon-button" id="close-menu-btn">
+                        <img src="./img/close-menu-btn.svg" width="23" height="23">
+                    </button>
+                    <div class="language-select">
+                        <div class="language__item"><a href="#">RU</a></div>
+                        <div class="language__item language__item_active">|</div>
+                        <div class="language__item language__item_active"><a href="#">ENG</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <header class="header">
             <div class="container">
                 <div class="header__row">
@@ -30,6 +54,9 @@
         <div class="hero">
             <div class="container">
                 <div class="hero-block">
+                    <button class="icon-button" id="open-menu-btn">
+                        <img src="./img/open-menu-btn.svg" width="33" height="20">
+                    </button>
                     <div class="introduction__block">
                         <h1>Denis<br>Novik</h1>
                         <div class="introduction__info">
@@ -45,7 +72,8 @@
                         </div>
                     </div>
                     <div class="introduction__img">
-                        <img src="./img/BSPP2266.jpg" width="945" height="388">
+                        <img class="hero__img_desk" src="./img/BSPP2266.jpg" width="945" height="388">
+                        <img class="hero__img_mob" src="./img/mob-intro.jpg" width="317" height="478">
                     </div>
                 </div>
             </div>
@@ -161,7 +189,7 @@
                     <div class="contacts__title title">Contacts</div>
                     <div class="contacts__text">Want to know more or just chat?<br> You are welcome!</div>
                     <div class="contacts__btn">
-                        <button class="button">Send message</button>
+                        <button class="button-msg">Send message</button>
                     </div>
                 </div>
             </div>
