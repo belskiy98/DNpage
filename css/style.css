@@ -1,11 +1,12 @@
 body {
     --bg-color: #FFFFFF;
-    --bg-secondary-color:#F6F6F6;
+    --bg-secondary-color:hwb(0 96% 4%);
     --text-color:#070707;
     --text-secondary-color:#828282;
     --seporator-color:#828282;
     --base-font-size:18px;
     --basw-line-height:22px;
+    --hover-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 html, body {
@@ -61,15 +62,18 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
-.introduction__name {
+.introduction__block h1 {
     font-size: 47px;
-    line-height: 59px;
-    font-weight: bold;
+    line-height: 59px
 }
+
+.introduction__info,
+.introduction__language {
+    margin-bottom: 40px;
+} 
 
 .language-select {
     display: flex;
@@ -78,10 +82,14 @@ html, body {
     font-size: 16px;
     line-height: 20px;
     font-weight: bold;
-    color: var(--text-secondary-color);
 }
 
-.language__item_active {
+.language__item a {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+}
+
+.language__item_active a {
     color: var(--text-color);
 }
 
@@ -128,14 +136,25 @@ html, body {
 
 .skills__instrument {
     display: flex;
-    gap: 92px;
     align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+    gap: 75px;
+    flex-wrap: wrap;
 }
 
 .instrument__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px 5px 10px 5px;
+    transition: all 200ms ease;
+}
+
+.instrument__item:hover {
+    border-radius: 5%;
+    box-shadow: var(--hover-shadow); 
+    transform: scale(110%);
 }
 
 .instrument__text {
@@ -180,6 +199,13 @@ html, body {
 .portfolio__img img {
     width: 100%;
     height: auto;
+    aspect-ratio: auto 937 / 522;
+    transition: all 200ms ease;
+}
+
+.portfolio__img img:hover {
+    transform: scale(105%);
+    box-shadow: var(--hover-shadow);
 }
 
 .link {
@@ -189,6 +215,10 @@ html, body {
 
 .link a {
     color: var(--text-color);
+}
+
+.link a:hover {
+    color: var(--text-secondary-color);
 }
 
 .contacts-row {
@@ -207,17 +237,22 @@ html, body {
 .button {
     background-color: var(--text-color);
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     color: var(--bg-color);
-    width: 180px;
-    height: 42px;
+    padding: 18px 35px 18px 35px;
     font-weight: bold;
     transition: all 200ms ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(95%);
 }
 
 .button:active {
     background-color: var(--bg-secondary-color);
     color: var(--text-color);
+    border: 1px solid var(--text-color);
 }
 
 .social-row {
@@ -229,6 +264,12 @@ html, body {
 .social__item img {
     width: 100%;
     height: auto;
+    aspect-ratio: auto 41 / 41;
+    transition: all 200ms ease;
+}
+
+.social__item img:hover {
+    transform: scale(105%);
 }
 
 .footer-row {
