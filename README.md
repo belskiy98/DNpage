@@ -15,4 +15,6 @@ Mobile version:
 
 ![Screenshot of the mobile version](./readme__img-mob.jpg)
 
-[Исходный макет на Figma](https://www.figma.com/file/5D9pDuLtS042hzaoN69Kd7/Free--Landing--Page-Template?node-id=254%3A515&t=OcdC0kkJTSqg88wN-0)
+Original layout by figma: 
+
+[![Original layout by figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/5D9pDuLtS042hzaoN69Kd7/Free--Landing--Page-Template?node-id=254%3A515&t=OcdC0kkJTSqg88wN-0)
