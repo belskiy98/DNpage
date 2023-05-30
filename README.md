@@ -1,17 +1,18 @@
 # UI/UX Designer Portfolio Page #
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-Сайт-визитка UI/UX дизайнера.
+Business card site for UI/UX designers.
 
-Сайт написан на HTML/JS/CSS.
+Technologies used by a website: HTML/CSS/JS.
 
 [Github Pages](https://belskiy98.github.io/DNpage/)
 
-Десктопная версия:
+Desktop version:
 
-![Скриншот десктопной версии](./readme_img.jpg)
+![Screenshot of the desktop version](./readme_img.jpg)
 
-Мобильная вервия:
+Mobile version:
 
-![Скриншот мобильной версии](./readme__img-mob.jpg)
+![Screenshot of the mobile version](./readme__img-mob.jpg)
 
 [Исходный макет на Figma](https://www.figma.com/file/5D9pDuLtS042hzaoN69Kd7/Free--Landing--Page-Template?node-id=254%3A515&t=OcdC0kkJTSqg88wN-0)
