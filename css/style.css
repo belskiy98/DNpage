@@ -1,12 +1,27 @@
 body {
     --bg-color: #FFFFFF;
-    --bg-secondary-color:hwb(0 96% 4%);
+    --bg-secondary-color:#f5f5f5;
     --text-color:#070707;
     --text-secondary-color:#828282;
     --seporator-color:#828282;
     --base-font-size:18px;
     --basw-line-height:22px;
-    --hover-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2);
+    --hover-shadow: 0 0px 5px 1px #00000033;
+    --fill-star-active: #070707;
+    --fill-star-none: #828282;
+}
+
+.dark-theme {
+    --bg-color: #181818;
+    --bg-secondary-color:#252424;
+    --text-color:#FFFFFF;
+    --text-secondary-color:#828282;
+    --seporator-color:#828282;
+    --base-font-size:18px;
+    --basw-line-height:22px;
+    --hover-shadow: 0 0px 5px 1px #FFFFFF;
+    --fill-star-active: #FFFFFF;
+    --fill-star-none: #828282;
 }
 
 html, body {
@@ -131,10 +146,19 @@ html, body {
 
 .nav__item_active {
     color: var(--text-color);
+    cursor: pointer;
 }
 
 .nav__item:hover {
     color:  var(--text-color);
+}
+
+.styled_checkbox input{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top:0;
 }
 
 .introduction__block {
@@ -198,9 +222,10 @@ html, body {
     border: none;
 }
 
-#open-menu-btn img {
+#open-menu-btn svg {
     width: 43px;
     height: auto;
+    fill: var(--fill-star-active);
 }
 
 @media (max-width: 700px) {
@@ -288,12 +313,19 @@ html, body {
     align-items: center;
     padding: 10px 5px 10px 5px;
     transition: all 200ms ease;
+    background-color: var(--bg-color-skill);
 }
 
 .instrument__item:hover {
     border-radius: 5%;
     box-shadow: var(--hover-shadow); 
     transform: scale(110%);
+}
+
+.instrument__img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto 89 / 88;
 }
 
 .instrument__text {
@@ -307,6 +339,19 @@ html, body {
 
 .instrument__star {
     padding-top: 40px;
+}
+
+.instrument__star svg {
+    width: 100%;
+    height: auto;
+}
+
+.star__active {
+    fill: var(--fill-star-active);
+}
+
+.star__noactive {
+    fill: var(--fill-star-none);
 }
 
 .portfolio {
@@ -353,6 +398,7 @@ html, body {
 }
 
 .link a {
+    transition: all 200ms ease;
     color: var(--text-color);
 }
 
@@ -433,4 +479,17 @@ html, body {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
+}
+
+.footer__link {
+    color: var(--text-secondary-color);
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+
+.footer__link:hover {
+    color: var(--text-color);
 }
