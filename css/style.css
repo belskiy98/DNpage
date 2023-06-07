@@ -33,6 +33,7 @@ html, body {
     line-height: var(--basw-line-height);
     background-color: var(--bg-color);
     color: var(--text-color);
+    transition: all 300ms ease;
 }
 
 .wrapper {

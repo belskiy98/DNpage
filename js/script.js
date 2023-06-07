@@ -8,4 +8,9 @@ window.addEventListener("DOMContentLoaded", function(){
 			document.querySelector(".mobile-menu").classList.remove("visible");
 		}
 	});
+
+	//switch to dark theme
+	document.querySelector(".btn-toggle").addEventListener("click", function(){
+		document.querySelector("body").classList.toggle("dark-theme");
+	});
 });
